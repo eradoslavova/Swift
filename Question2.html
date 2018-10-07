@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short space quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Short space quiz</h1>
+        <p>After you select your answer, click the nex button to go to the next question.</p>
+    </header>
+
+    <main>
+        <h2>By listening to the audio track, can you guess who is the person speaking?</h2>
+        <br/>
+        <form action="serverSimulation.html" method="GET">
+            <ol start ="1" type="1">
+                <li>
+                    <audio controls>
+                        <source src="Audios/Question 2.mp3" type="audio/mpeg">
+                    </audio>
+                    <ol start="1" type="A">
+                        <li>
+                            <input type="radio" name="person" value="Darth Vader">Darth Vader
+                        </li>
+                        <li>
+                            <input type="radio" name="person" value="Terminator">Terminator
+                        </li>
+                        <li>
+                            <input type="radio" name="person" value="Stephen Hawking">Stephen Hawking
+                        </li>
+                        <li>
+                            <input type="radio" name="person" value="Michio Kaku">Michio Kaku
+                        </li>
+                    </ol>
+                </li>
+                <br/>
+                <li>
+                    <audio controls>
+                        <source src="Audios/Question 3.mp3" type="audio/mpeg"/>
+                    </audio>
+                    <ol start="1" type="A">
+                        <li>
+                            <input type="radio" name="person" value="Elon Musk">Elon Musk
+                        </li>
+                        <li>
+                            <input type="radio" name="person" value="Neil deGrass Tyson">Neil deGrass Tyson
+                        </li>
+                        <li>
+                            <input type="radio" name="person" value="Mike Tyson">Mike Tyson
+                        </li>
+                        <li>
+                            <input type="radio" name="person" value="Eddie Murphey">Eddie Murphey
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <input type="submit" name="Submit" value="Finish quiz"/>
+        </form>
+    </main>
+</body>

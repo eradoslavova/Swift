@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short space quiz</title>
+</head>
+<body>
+    <header>
+        <h1>Short space quiz</h1>
+        <p>After you select your answer, click the nex button to go to the next question.</p>
+    </header>
+
+    <main>
+        <h2>By watching the video can you guess what is the size of the space station?</h2>
+        <br/>
+        <video controls poster="Images/iss.jpg" height="300">
+            <source src="Videos/iss animation.mp4" type="video/mp4"/>
+        </video>
+        <form action="serverSimulation.html" method="GET">
+            <ol start="1" type="A">
+                <li>
+                    <input type="radio" name="size" value="350m X 232m">350m X 232m
+                </li>
+                <li>
+                    <input type="radio" name="size" value="60m X 24m">60m X 24m
+                </li>
+                <li>
+                    <input type="radio" name="size" value="109m X 73m">109m X 73m
+                </li>
+                <li>
+                    <input type="radio" name="size" value="206m X 176m">206m X 176m
+                </li>
+            </ol>
+        </form>
+        <a href="Question2.html">
+            <input type="submit" name="Next question" value="Next question >"/>
+        </a>
+    </main>
+</body>
+</html>
